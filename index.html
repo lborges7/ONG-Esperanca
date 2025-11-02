@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ONG Esperança — Início</title>
+    <meta name="description" content="ONG Esperança — ações comunitárias, voluntariado e transparência." />
+    <meta name="keywords" content="ONG, voluntariado, projetos sociais, doações, educação, saúde, sustentabilidade" />
+    <meta property="og:title" content="ONG Esperança — Início" />
+    <meta property="og:description" content="Conheça iniciativas de impacto social em educação, saúde e desenvolvimento local." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="header-left">
+          <a class="brand" href="index.html" aria-label="ONG Esperança — Início">
+            <svg class="logo" width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+              <rect width="100" height="100" rx="16" fill="#2a9d8f" />
+              <path d="M30 55 C40 40, 60 40, 70 55 C60 70, 40 70, 30 55 Z" fill="#ffffff"/>
+            </svg>
+            <span class="brand-text">ONG Esperança</span>
+          </a>
+          <button id="btn-theme" class="icon-btn" aria-label="Alternar tema">🌓</button>
+        </div>
+
+        <nav id="nav" class="nav" aria-label="Navegação principal">
+          <ul>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="depoimentos.html">Depoimentos</a></li>
+            <li><a href="cadastro.html" class="cta">Cadastro</a></li>
+          </ul>
+        </nav>
+
+        <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="container" role="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title">Transformando comunidades com ações reais</h1>
+          <p>Somos a ONG Esperança — trabalhamos em educação, saúde e desenvolvimento local com transparência e participação.</p>
+          <p class="hero-cta">
+            <a href="cadastro.html" class="btn btn-primary">Quero ajudar</a>
+            <a href="projetos.html" class="btn btn-outline">Conhecer projetos</a>
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+        </div>
+      </section>
+
+      <section class="stats" aria-labelledby="impacto-title">
+        <h2 id="impacto-title">Nosso impacto</h2>
+        <div class="stats-grid">
+          <div class="stat" aria-label="Projetos apoiados">
+            <h3 class="count" data-target="123">0</h3>
+            <p>Projetos apoiados</p>
+          </div>
+          <div class="stat" aria-label="Beneficiados">
+            <h3 class="count" data-target="10568">0</h3>
+            <p>Beneficiados</p>
+          </div>
+          <div class="stat" aria-label="Cidades atendidas">
+            <h3 class="count" data-target="4">0</h3>
+            <p>Cidades atendidas</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards" aria-labelledby="projetos-home">
+        <h2 id="projetos-home">Destaques dos projetos</h2>
+        <div class="cards-grid" id="carousel" role="region" aria-roledescription="carousel" aria-label="Projetos em destaque">
+          <article class="card" tabindex="0">
+            <img src="images/Alfabetizacao.png" alt="Oficina de alfabetização" />
+            <h3>Alfabetização</h3>
+            <p>Oficinas semanais de leitura e escrita para adolescentes.</p>
+          </article>
+
+          <article class="card" tabindex="0">
+            <img src="images/SaudeComunitária.png" alt="Campanha de saúde" />
+            <h3>Saúde Comunitária</h3>
+            <p>Atendimento básico, palestras e campanhas de prevenção.</p>
+          </article>
+
+          <article class="card" tabindex="0">
+            <img src="images/EmpreendedorismoLocal.png" alt="Oficina de empreendedorismo" />
+            <h3>Empreendedorismo Local</h3>
+            <p>Capacitação e microcrédito para pequenos empreendedores.</p>
+          </article>
+
+          <article class="card" tabindex="0">
+            <img src="images/Sustentabilidade.png" alt="Sustentabilidade e Meio Ambiente" />
+            <h3>Sustentabilidade e Meio Ambiente</h3>
+            <p>Ações práticas de sustentabilidade e educação ambiental.</p>
+          </article>
+        </div>
+        <div class="carousel-controls" aria-hidden="false">
+          <button id="prev" class="icon-btn" aria-label="Anterior">‹</button>
+          <button id="next" class="icon-btn" aria-label="Próximo">›</button>
+        </div>
+      </section>
+
+      <section class="cta-section" aria-labelledby="apoie-title">
+        <h2 id="apoie-title">Como apoiar</h2>
+        <p>Doações via PIX, transferência ou voluntariado — cada contribuição gera impacto real.</p>
+        <div class="cta-grid">
+          <div class="cta-card">
+            <h4>Doar</h4>
+            <p>PIX: 00000000@banco • CNPJ: 00.000.000/0000-00</p>
+          </div>
+          <div class="cta-card">
+            <h4>Voluntariar</h4>
+            <p>Participe das nossas ações locais — preencha o cadastro. <a href="cadastro.html">Clique aqui</a> para se cadastrar</p>
+          </div>
+          <div class="cta-card">
+            <h4>Parcerias</h4>
+            <p>Projetos colaborativos com empresas e outras ONGs.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="about">
+          <strong>ONG Esperança</strong>
+          <address>
+            Rua Exemplo, 123 — São Paulo, SP<br />
+            <a href="mailto:contato@ongesperanca.org">contato@ongesperanca.org</a>
+          </address>
+        </div>
+        <div class="social" aria-label="Redes sociais">
+          <a aria-label="Facebook" href="#" class="social-link">Facebook</a>
+          <a aria-label="Instagram" href="#" class="social-link">Instagram</a>
+          <a aria-label="LinkedIn" href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="legal container">
+        <small>&copy; <span id="ano"></span> ONG Esperança — Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

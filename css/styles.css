@@ -1,0 +1,455 @@
+/* ===== ONG Esperança — Design system ===== */
+:root {
+  --green: #2a9d8f;
+  --blue: #0077b6;
+  --bg: #fbfdff;
+  --card: #ffffff;
+  --text: #083344;
+  --muted: #6b7c83;
+  --radius: 12px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --font-base: 16px;
+  --font-lg: 20px;
+  --font-xl: 28px;
+  --shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  font-size: var(--font-base);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: var(--green);
+  color: #fff;
+  border-radius: 6px;
+  z-index: 1000;
+}
+body {
+  background: linear-gradient(180deg, #f7fbfc 0%, var(--bg) 100%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  z-index: 50;
+  border-bottom: 1px solid rgba(2, 6, 23, 0.03);
+}
+.header-inner,
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 0.6rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav ul {
+  display: flex;
+  gap: 0.7rem;
+  list-style: none;
+}
+.nav a {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.nav a:hover,
+a.btn.btn-outline:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 226, 203, 0.12),
+    rgba(0, 119, 182, 0.08)
+  );
+  transform: translateY(-2px);
+}
+.cta {
+  background: var(--green);
+  color: #fff;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+}
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  gap: 4px;
+  padding: 0.25rem;
+}
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #083344;
+  border-radius: 2px;
+}
+
+/* HERO */
+.hero,
+.hero-project,
+.hero-tea {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 2.2rem 0;
+  font-size: 1rem;
+  position: relative;
+}
+.hero-content h1,
+.hero-project h1,
+.hero-team h1,
+.hero-testimonials h1 {
+  font-size: var(--font-xl);
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-cta {
+  margin-top: var(--space-2);
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+button.btn-primary,
+button.btn-secondary {
+  width: auto;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  padding: 0.55rem 0.9rem;
+}
+
+/* blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  pointer-events: none;
+}
+.blob-1 {
+  width: 220px;
+  height: 220px;
+  right: 0;
+  top: -30px;
+  background: var(--green);
+}
+.blob-2 {
+  width: 140px;
+  height: 140px;
+  right: 40px;
+  top: 40px;
+  background: var(--blue);
+  opacity: 0.7;
+}
+
+.stats,
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project img,
+.team img {
+  max-width: 420px;
+  width: -webkit-fill-available;
+}
+
+[role="main"],
+.team,
+.projects,
+.team-grid,
+.projects li,
+.values li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* cards */
+.cards-grid {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 0.5rem 0;
+  scroll-snap-type: x mandatory;
+}
+.card {
+  max-width: 350px;
+  min-width: 280px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+  scroll-snap-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover,
+.stat:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(2, 6, 23, 0.08);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-controls button,
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--green);
+  color: var(--bg);
+}
+
+.carousel-controls button:hover,
+button:hover {
+  background-color: var(--muted);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* stats */
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1;
+  min-width: 140px;
+  max-width: 350px;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.count {
+  font-size: 1.6rem;
+  color: var(--green);
+}
+
+/* form */
+.form-card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+input,
+select,
+textarea,
+fieldset {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #e8eef2;
+}
+label.checkbox,
+.carousel-controls {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+#aceito {
+  max-width: fit-content;
+}
+
+/* footer */
+.site-footer {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background: transparent;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.legal {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+a.social-link,
+.btn.btn-outline {
+  color: #071924;
+}
+
+/* responsive */
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 2fr 30px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 515px) {
+  .stats-grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+    position: fixed;
+    inset: 78px 12px auto 12px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .nav.open {
+    display: block;
+    background-color: #2a9d90ea;
+    color: var(--bg);
+  }
+  .nav.open ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta,
+  a.cta {
+    background: var(--bg);
+    color: var(--green);
+  }
+}
+
+/* reveal animations */
+.visible {
+  opacity: 1;
+  transform: none;
+  transition: all 0.6s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.card,
+.stat,
+.project,
+.testimonials blockquote,
+.cta-card {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* dark mode */
+.dark {
+  background: #071924;
+  color: #dbeef8;
+}
+.dark body,
+.dark .card,
+.dark .form-card,
+.dark .site-header,
+.dark .legal {
+  background: #07262ee1;
+  color: #d7f0fb;
+}
+.dark .btn-primary {
+  background: linear-gradient(90deg, #ffffff, #7ffdef);
+  color: #071924;
+}
+
+.dark .btn-outline,
+.dark a.btn.btn-outline,
+.dark a.social-link,
+.dark .cta-card a,
+.dark .about a {
+  color: var(--bg);
+}
+.dark .hamburger span {
+  background-color: var(--bg);
+}
