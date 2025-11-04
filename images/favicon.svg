@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <rect width="100" height="100" rx="16" fill="#2a9d8f"/>
   <path d="M30 55 C40 40, 60 40, 70 55 C60 70, 40 70, 30 55 Z" fill="#ffffff"/>
+=======
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="16" fill="#2a9d8f"/>
+  <path d="M30 55 C40 40, 60 40, 70 55 C60 70, 40 70, 30 55 Z" fill="#ffffff"/>
+>>>>>>> 7dc597a3441cd0037136bc2e868fe6b05332451a
 </svg>
