@@ -34,7 +34,14 @@ ONG-Esperanca/
 - HTML5 semântico
 - CSS3 (Grid, Flexbox, Custom Properties)
 - JavaScript (ES6) — sem frameworks, modular
-- Deploy sugerido: GitHub Pages
+
+
+## Link de acesso
+
+Acesse de qualquer dispositivo pelo link abaixo:
+- https://lborges7.github.io/ONG-Esperanca/
+
+Deploy realizado pelo GitHub Pages.
 
 ## Como usar localmente
 
