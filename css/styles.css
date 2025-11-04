@@ -327,6 +327,7 @@ fieldset {
   border: 1px solid #e8eef2;
 }
 label.checkbox,
+.form-actions,
 .carousel-controls {
   display: flex;
   gap: 1rem;

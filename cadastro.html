@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Cadastro — ONG Esperança</title>
-    <meta name="description" content="Formulário de cadastro para voluntariado e interessados." />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="Formulário de cadastro para voluntariado e interessados."
+    />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -13,14 +16,29 @@
     <header class="site-header" role="banner">
       <div class="container header-inner">
         <div class="header-left">
-          <a class="brand" href="index.html" aria-label="ONG Esperança — Início">
-            <svg class="logo" width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="ONG Esperança — Início"
+          >
+            <svg
+              class="logo"
+              width="40"
+              height="40"
+              viewBox="0 0 100 100"
+              aria-hidden="true"
+            >
               <rect width="100" height="100" rx="16" fill="#2a9d8f" />
-              <path d="M30 55 C40 40, 60 40, 70 55 C60 70, 40 70, 30 55 Z" fill="#ffffff"/>
+              <path
+                d="M30 55 C40 40, 60 40, 70 55 C60 70, 40 70, 30 55 Z"
+                fill="#ffffff"
+              />
             </svg>
             <span class="brand-text">ONG Esperança</span>
           </a>
-          <button id="btn-theme" class="icon-btn" aria-label="Alternar tema">🌓</button>
+          <button id="btn-theme" class="icon-btn" aria-label="Alternar tema">
+            🌓
+          </button>
         </div>
 
         <nav id="nav" class="nav" aria-label="Navegação principal">
@@ -32,7 +50,14 @@
             <li><a href="cadastro.html" class="cta active">Cadastro</a></li>
           </ul>
         </nav>
-        <button id="btn-hamburger" class="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <button
+          id="btn-hamburger"
+          class="hamburger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
@@ -42,39 +67,105 @@
         <fieldset>
           <legend>Informações pessoais</legend>
           <div class="form-grid">
-            <label for="nome">Nome completo
-              <input id="nome" name="nome" type="text" required minlength="3" aria-required="true" />
+            <label for="nome"
+              >Nome completo
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                minlength="3"
+                aria-required="true"
+              />
             </label>
 
-            <label for="email">E-mail
-              <input id="email" name="email" type="email" required aria-required="true" />
+            <label for="email"
+              >E-mail
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="cpf">CPF
-              <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required aria-required="true" />
+            <label for="cpf"
+              >CPF
+              <input
+                id="cpf"
+                name="cpf"
+                type="text"
+                inputmode="numeric"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                placeholder="000.000.000-00"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="telefone">Telefone
-              <input id="telefone" name="telefone" type="tel" inputmode="tel" placeholder="(00) 90000-0000" required aria-required="true" />
+            <label for="telefone"
+              >Telefone
+              <input
+                id="telefone"
+                name="telefone"
+                type="tel"
+                inputmode="tel"
+                placeholder="(00) 90000-0000"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="nascimento">Data de nascimento
-              <input id="nascimento" name="nascimento" type="date" required aria-required="true" />
+            <label for="nascimento"
+              >Data de nascimento
+              <input
+                id="nascimento"
+                name="nascimento"
+                type="date"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="cep">CEP
-              <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-?\d{3}" placeholder="00000-000" required aria-required="true" />
+            <label for="cep"
+              >CEP
+              <input
+                id="cep"
+                name="cep"
+                type="text"
+                inputmode="numeric"
+                pattern="\d{5}-?\d{3}"
+                placeholder="00000-000"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="endereco">Endereço
-              <input id="endereco" name="endereco" type="text" required aria-required="true" />
+            <label for="endereco"
+              >Endereço
+              <input
+                id="endereco"
+                name="endereco"
+                type="text"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="cidade">Cidade
-              <input id="cidade" name="cidade" type="text" required aria-required="true" />
+            <label for="cidade"
+              >Cidade
+              <input
+                id="cidade"
+                name="cidade"
+                type="text"
+                required
+                aria-required="true"
+              />
             </label>
 
-            <label for="estado">Estado
+            <label for="estado"
+              >Estado
               <select id="estado" name="estado" required aria-required="true">
                 <option value="">Selecione</option>
                 <option>SP</option>
@@ -86,7 +177,10 @@
           </div>
         </fieldset>
 
-        <label class="checkbox"><input type="checkbox" id="aceito" required />Concordo com a política de privacidade</label>
+        <label class="checkbox"
+          ><input type="checkbox" id="aceito" required />Concordo com a política
+          de privacidade</label
+        >
 
         <div class="form-actions">
           <button type="submit" class="btn btn-primary">Enviar cadastro</button>
@@ -97,13 +191,20 @@
       </form>
     </main>
 
-    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+      ↑
+    </button>
 
     <footer class="site-footer" role="contentinfo">
       <div class="container footer-inner">
-        <div class="about"><strong>ONG Esperança</strong><p>Transparência e impacto.</p></div>
+        <div class="about">
+          <strong>ONG Esperança</strong>
+          <p>Transparência e impacto.</p>
+        </div>
       </div>
-      <div class="legal container"><small>&copy; <span id="ano5"></span> ONG Esperança</small></div>
+      <div class="legal container">
+        <small>&copy; <span id="ano5"></span> ONG Esperança</small>
+      </div>
     </footer>
 
     <script src="js/main.js" defer></script>
